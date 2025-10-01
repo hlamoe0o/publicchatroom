@@ -132,4 +132,18 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 1. your project need Repo public/private to Github
 
-2. 
+2. signin your account to https://render.com/
+
+3. Prepare the build output 
+your project must builded and typically located in the 'dist' directory
+
+4. Create a new static site
+click > "New +" > Static Site > Github > your account > choose repo > click "Connect"
+
+5. Name: publicchatroom
+Branch: main
+Build Command: npm run build    ( React, Vue, vite, etc... ) , ng build ( Angular )
+Public Directory: dist 
+Start Command: node server.js 
+
+6. Environment Variables = copy paste .env data to Environment Variables

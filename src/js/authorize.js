@@ -26,6 +26,9 @@ export function Authorize() {
         displayName: fullname,
         photoURL: defaultprofileimg,
       }).then(() => {
+        // set name to localStorage
+        setLocalName(fullname);
+
         // Redirect to index.html
         window.location.href = "../index.html";
       });
@@ -90,7 +93,6 @@ export function Authorize() {
 
     signInWithPopup(auth, provider)
       .then((result) => {
-
         // set name to localStorage
         setLocalName(result.user.displayName);
 
