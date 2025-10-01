@@ -4,9 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "prebuild": "shx chmod +x node_modules/.bin/vite",
     "dev": "vite",
-    "build": "vite build",
+    "build": "node ./node_modules/vite/bin/vite.js build",
     "start": "node server.js"
   },
   "keywords": [],
