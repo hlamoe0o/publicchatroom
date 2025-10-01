@@ -8,6 +8,8 @@ import {
   where,
   orderBy,
   deleteDoc,
+  getDocs,
+  doc,
 } from "firebase/firestore";
 
 export function Chatroom(room, username) {
