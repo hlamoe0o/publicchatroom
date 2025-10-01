@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chat Room</title>
+
+  <!-- include auth check -->
+
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+  <script type="module" crossorigin src="/assets/main-C2V9WByS.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/main-CymjoVUT.js">
+  <link rel="modulepreload" crossorigin href="/assets/en-US-DsgqewAh.js">
+  <link rel="stylesheet" crossorigin href="/assets/main-Bo-tb5IY.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-tn0RQdqM.css">
+  <link rel="stylesheet" crossorigin href="/assets/all-D42tgqy4.css">
+</head>
+
+<body>
+  <section class="flex">
+    <div class="w-16 h-screen bg-white flex flex-col items-center py-8 space-y-8">
+      <a href="javascript:void(0);"
+        class="text-gray-500 rounded-lg p-2 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-600"><i
+          class="fas fa-home"></i></a>
+      <a href="javascript:void(0);"
+        class="bg-blue-100 text-gray-500 rounded-lg p-2 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-600"><i
+          class="fas fa-users"></i></a>
+      <a href="javascript:void(0);"
+        class="text-gray-500 rounded-lg p-2 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-600"><i
+          class="fas fa-chart-bar"></i></a>
+      <a href="javascript:void(0);"
+        class="text-gray-500 rounded-lg p-2 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-600"><i
+          class="fas fa-chart-pie"></i></a>
+      <a href="javascript:void(0);"
+        class="text-gray-500 rounded-lg p-2 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-600"><i
+          class="fas fa-envelope"></i></a>
+      <a href="javascript:void(0);"
+        class="text-gray-500 rounded-lg p-2 transition-colors duration-200 hover:bg-gray-100 hover:text-gray-600"><i
+          class="fas fa-cogs"></i></a>
+    </div>
+
+    <div class="w-64 h-screen bg-white border-l px-2 py-8 overflow-y-auto">
+      <h3 class="text-gray-700 text-lg text-center font-medium px-5">
+        Chat Room
+      </h3>
+      <p class="text-gray-700 text-sm text-center font-medium px-5">1/6</p>
+
+      <div class="mt-8 space-y-5">
+        <div class="chatrooms">
+          <button type="button" id="general"
+            class="w-full flex items-center border-b px-5 py-2 gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+            <img src="/images/general.png" class="w-10 h-10 object-cover rounded-full" alt="general" />
+
+            <div class="text-left">
+              <h3 class="text-small text-gray-700 font-medium capitalize">
+                General
+              </h3>
+              <p class="text-xs text-gray-500">Public</p>
+            </div>
+          </button>
+
+          <button type="button" id="information"
+            class="w-full flex items-center border-b px-5 py-2 gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+            <img src="/images/information.png" class="w-10 h-10 object-cover rounded-full" alt="information" />
+
+            <div class="text-left">
+              <h3 class="text-small text-gray-700 font-medium capitalize">
+                Information
+              </h3>
+              <p class="text-xs text-gray-500">Public</p>
+            </div>
+          </button>
+
+          <button type="button" id="nodejs"
+            class="w-full flex items-center border-b px-5 py-2 gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+            <img src="/images/nodejs.png" class="w-10 h-10 object-cover rounded-full" alt="nodejs" />
+
+            <div class="text-left">
+              <h3 class="text-small text-gray-700 font-medium capitalize">
+                Nodejs
+              </h3>
+              <p class="text-xs text-gray-500">Public</p>
+            </div>
+          </button>
+
+          <button type="button" id="reactjs"
+            class="w-full flex items-center border-b px-5 py-2 gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+            <img src="/images/reactjs.png" class="w-10 h-10 object-cover rounded-full" alt="reactjs" />
+
+            <div class="text-left">
+              <h3 class="text-small text-gray-700 font-medium capitalize">
+                Reactjs
+              </h3>
+              <p class="text-xs text-gray-500">Public</p>
+            </div>
+          </button>
+
+          <button type="button" id="laravel"
+            class="w-full flex items-center border-b px-5 py-2 gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+            <img src="/images/laravel.png" class="w-10 h-10 object-cover rounded-full" alt="laravel" />
+
+            <div class="text-left">
+              <h3 class="text-small text-gray-700 font-medium capitalize">
+                Laravel
+              </h3>
+              <p class="text-xs text-gray-500">Public</p>
+            </div>
+          </button>
+
+          <button type="button" id="python"
+            class="w-full flex items-center border-b px-5 py-2 gap-x-3.5 transition-colors duration-300 hover:bg-gray-400 focus:outline-none">
+            <img src="/images/python.png" class="w-10 h-10 object-cover rounded-full" alt="python" />
+
+            <div class="text-left">
+              <h3 class="text-small text-gray-700 font-medium capitalize">
+                Python
+              </h3>
+              <p class="text-xs text-gray-500">Public</p>
+            </div>
+          </button>
+        </div>
+
+        <div>
+          <a href="./profile.html"
+            class="block text-center w-full bg-slate-500 text-white text-sm hover:bg-slate-700 py-1">Profile</a>
+        </div>
+
+        <form action="" method="" class="my-3 user-form">
+          <input type="text" name="username" id="username"
+            class="block w-full border border-gray-300 focus:outline-none px-4 py-2" placeholder="User Name" required />
+          <span class="text-gray-600 text-sm msg">name updated to aung aung</span>
+        </form>
+      </div>
+    </div>
+
+    <div class="w-full h-screen bg-white border-l px-5 py-8">
+      <div class="bg-slate-200 text-blue-600 px-4 py-3">
+        <h6 class="roomtitle">Room Title</h6>
+      </div>
+
+      <div class="mt-12 chat-container">
+        <ul class="h-[78vh] space-y-5 overflow-y-auto chat-ul">
+          <!-- <li class="shadow rounded-lg px-4 py-2">
+                        <div class="flex justify-between">
+                            <h5 class="text-gray-600 font-medium text-sm">Guest</h5>
+                            <i class="text-gray-300 text-xs">19 minutes ago</i>
+                        </div>
+                        <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
+                            minus eos, eaque asperiores laudantium ratione dignissimos reprehenderit voluptas dicta
+                            architecto accusamus libero dolorem quos mollitia, neque est eligendi deserunt voluptatum
+                            quidem! Facilis omnis non corporis reprehenderit recusandae sit consectetur tempore
+                            consequuntur numquam, vel beatae, qui ullam alias officia rem ipsa at dolorem! Vel, tempora.
+                            Porro veniam placeat quo reprehenderit totam!</p>
+                    </li>
+
+                    <li class="shadow rounded-lg px-4 py-2">
+                        <div class="flex justify-between">
+                            <h5 class="text-gray-600 font-medium text-sm">Guest</h5>
+                            <i class="text-gray-300 text-xs">19 minutes ago</i>
+                        </div>
+                        <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
+                            minus eos, eaque asperiores laudantium ratione dignissimos reprehenderit voluptas dicta
+                            architecto accusamus libero dolorem quos mollitia, neque est eligendi deserunt voluptatum
+                            quidem! Facilis omnis non corporis reprehenderit recusandae sit consectetur tempore
+                            consequuntur numquam, vel beatae, qui ullam alias officia rem ipsa at dolorem! Vel, tempora.
+                            Porro veniam placeat quo reprehenderit totam!</p>
+                    </li> -->
+        </ul>
+      </div>
+
+      <div class="border-t">
+        <form action="" method="" class="flex items-center my-3 chat-form">
+          <input type="text" name="message" id="message"
+            class="flex-grow text-md border border-gray-300 focus:outline-none px-4 py-1"
+            placeholder="Type your message..." required />
+          <button type="submit"
+            class="bg-blue-500 text-white flex justify-center items-center px-4 py-2 hover:bg-blue-600 focus:outline-none focus:ring focus:ring-300">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/date-fns@3.6.0/cdn.min.js"></script> -->
+</body>
+
+</html>

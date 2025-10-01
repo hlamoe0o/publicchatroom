@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reset Password</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" crossorigin src="/assets/reset-CvDExz1P.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/main-CymjoVUT.js">
+    <link rel="stylesheet" crossorigin href="/assets/main-Bo-tb5IY.css">
+  </head>
+
+  <body class="h-screen bg-gray-100 flex justify-center items-center">
+    <div class="w-full max-w-md shadow-md rounded-md p-6">
+      <h6 class="text-lg mb-4">Reset Password</h6>
+
+      <form
+        action=""
+        method="POST"
+        id="resetpasswordform"
+        class="flex flex-col"
+      >
+        <div class="flex flex-col">
+          <label for="resetemail" class="text-sm">Email</label>
+          <input
+            type="email"
+            id="resetemail"
+            name="resetemail"
+            class="border border-gray-300 text-sm rounded-md focus:outline-none focus:border-blue-500 px-3 py-2 mt-1"
+            placeholder="Email"
+            required
+          />
+        </div>
+
+        <div class="flex justify-end">
+          <button
+            type="submit"
+            class="bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 focus:outline-none px-4 py-2 mt-2"
+          >
+            Send Password Reset Email
+          </button>
+        </div>
+      </form>
+
+      <p id="msg" class="text-sm"></p>
+
+      <div class="mt-4">
+        <a
+          href="./signin.html"
+          class="block text-blue-600 text-sm hover:underline"
+          >Already register! Signin here.</a
+        >
+      </div>
+    </div>
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </body>
+</html>
