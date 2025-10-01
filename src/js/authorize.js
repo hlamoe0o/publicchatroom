@@ -27,7 +27,7 @@ export function Authorize() {
         photoURL: defaultprofileimg,
       }).then(() => {
         // set name to localStorage
-        setLocalName(fullname);
+        setLocalName(user);
 
         // Redirect to index.html
         window.location.href = "../index.html";
